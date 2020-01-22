@@ -23,14 +23,14 @@ class UsersViewController: UIViewController {
         }
     }
     
-    var lastVisibleCellIndexPath: IndexPath?
+    var ignoreScroll = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setupSearchTextField()
         fetchUsers()
-     
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -40,15 +40,17 @@ class UsersViewController: UIViewController {
     }
     
     @objc func keyboardWillShow(notification: NSNotification){
-        if let userInfo = notification.userInfo {
-            let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-            if let tabBarHeight = (self.navigationController?.viewControllers.first as? TabBarViewController)?.tabBar.frame.height {
-                tableView.contentInset.bottom = keyboardFrame.size.height - tabBarHeight
-                tableView.scrollIndicatorInsets.bottom = keyboardFrame.size.height - tabBarHeight
-                if let cell = tableView.visibleCells.last,
-                    let lastVisibleCellIndexPath = tableView.indexPath(for: cell) {
-                    self.lastVisibleCellIndexPath = lastVisibleCellIndexPath
-                    self.tableView.scrollToRow(at:lastVisibleCellIndexPath, at: .bottom, animated: true)
+        if !ignoreScroll {
+            if let userInfo = notification.userInfo {
+                let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+                if let tabBarHeight = (self.navigationController?.viewControllers.first as? TabBarViewController)?.tabBar.frame.height {
+                    tableView.contentInset.bottom = keyboardFrame.size.height - tabBarHeight
+                    tableView.scrollIndicatorInsets.bottom = keyboardFrame.size.height - tabBarHeight
+                    ignoreScroll = true
+                    if let cell = tableView.visibleCells.last,
+                        let lastVisibleCellIndexPath = tableView.indexPath(for: cell) {
+                        self.tableView.scrollToRow(at:lastVisibleCellIndexPath, at: .none, animated: true)
+                    }
                 }
             }
         }
@@ -57,10 +59,9 @@ class UsersViewController: UIViewController {
     @objc func keyboardWillHide(notification: NSNotification){
         if let userInfo = notification.userInfo {
             let _ = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+            ignoreScroll = false
             tableView.contentInset.bottom = 0
-            if let lastVisibleCellIndexPath = lastVisibleCellIndexPath {
-                tableView.scrollToRow(at: lastVisibleCellIndexPath, at: .bottom, animated: true)
-            }
+            tableView.scrollIndicatorInsets.bottom = 0
         }
     }
     
@@ -156,6 +157,7 @@ extension UsersViewController: UITableViewDataSource {
         guard let usersFirstLetter = filteredDataSource[section].first?.key else { return "" }
         return "Użytkownicy których na \(usersFirstLetter)"
     }
+    
 }
 
 extension UsersViewController: UITableViewDelegate {
