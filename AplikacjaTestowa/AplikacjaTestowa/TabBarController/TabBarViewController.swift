@@ -1,6 +1,6 @@
 //
 //  TabBarViewController.swift
-//  AplikacjaRekrutacyjna
+//  AplikacjaTestowa
 //
 //  Created by Kacper Wysocki on 22/01/2020.
 //  Copyright © 2020 Kacper Wysocki. All rights reserved.

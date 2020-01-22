@@ -16,6 +16,13 @@
 		FCA4D40423D8BD0F00E33757 /* DansDisney.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D40323D8BD0F00E33757 /* DansDisney.ttf */; };
 		FCA4D40723D8C36100E33757 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D40623D8C36100E33757 /* TabBarViewController.swift */; };
 		FCA4D40B23D8C56A00E33757 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D40A23D8C56A00E33757 /* UsersViewController.swift */; };
+		FCEDE9AF23D8C7D5004D218F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDE9AD23D8C7D5004D218F /* UserTableViewCell.swift */; };
+		FCEDE9B023D8C7D5004D218F /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEDE9AE23D8C7D5004D218F /* UserTableViewCell.xib */; };
+		FCEDE9B523D8CDA5004D218F /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDE9B423D8CDA5004D218F /* UITextField+Padding.swift */; };
+		FCEDE9B923D8CFF7004D218F /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDE9B723D8CFF7004D218F /* UserDetailsViewController.swift */; };
+		FCEDE9BA23D8CFF7004D218F /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEDE9B823D8CFF7004D218F /* UserDetailsViewController.xib */; };
+		FCEDE9BD23D8D205004D218F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDE9BC23D8D205004D218F /* User.swift */; };
+		FCEDE9BF23D8D39D004D218F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = FCEDE9BE23D8D39D004D218F /* users.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +40,13 @@
 		FCA4D40323D8BD0F00E33757 /* DansDisney.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DansDisney.ttf; sourceTree = "<group>"; };
 		FCA4D40623D8C36100E33757 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		FCA4D40A23D8C56A00E33757 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		FCEDE9AD23D8C7D5004D218F /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FCEDE9AE23D8C7D5004D218F /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		FCEDE9B423D8CDA5004D218F /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		FCEDE9B723D8CFF7004D218F /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		FCEDE9B823D8CFF7004D218F /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
+		FCEDE9BC23D8D205004D218F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FCEDE9BE23D8D39D004D218F /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		FDB2487F62686F2AA8D15D0A /* Pods_AplikacjaTestowa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplikacjaTestowa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,10 +102,13 @@
 		FCA4D3E923D8B85100E33757 /* AplikacjaTestowa */ = {
 			isa = PBXGroup;
 			children = (
+				FCEDE9BE23D8D39D004D218F /* users.json */,
+				FCEDE9B123D8CD87004D218F /* Extensions */,
 				FCA4D3EA23D8B85100E33757 /* AppDelegate.swift */,
 				FCA4D40523D8C31500E33757 /* TabBarController */,
-				FCA4D3FF23D8BB3C00E33757 /* StoryBoard */,
-				FCA4D3FE23D8BB3500E33757 /* Screen */,
+				FCA4D3FF23D8BB3C00E33757 /* StoryBoards */,
+				FCEDE9BB23D8D1FA004D218F /* Models */,
+				FCA4D3FE23D8BB3500E33757 /* Screens */,
 				FCA4D40223D8BCFE00E33757 /* Fonts */,
 				FCA4D3F323D8B85200E33757 /* Assets.xcassets */,
 				FCA4D3F823D8B85200E33757 /* Info.plist */,
@@ -99,22 +116,22 @@
 			path = AplikacjaTestowa;
 			sourceTree = "<group>";
 		};
-		FCA4D3FE23D8BB3500E33757 /* Screen */ = {
+		FCA4D3FE23D8BB3500E33757 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				FCA4D40923D8C55600E33757 /* Users */,
 				FCA4D40823D8C54E00E33757 /* AppInfo */,
 			);
-			path = Screen;
+			path = Screens;
 			sourceTree = "<group>";
 		};
-		FCA4D3FF23D8BB3C00E33757 /* StoryBoard */ = {
+		FCA4D3FF23D8BB3C00E33757 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
 				FCA4D3F023D8B85100E33757 /* Main.storyboard */,
 				FCA4D3F523D8B85200E33757 /* LaunchScreen.storyboard */,
 			);
-			path = StoryBoard;
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		FCA4D40223D8BCFE00E33757 /* Fonts */ = {
@@ -144,9 +161,61 @@
 		FCA4D40923D8C55600E33757 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				FCEDE9B623D8CFE1004D218F /* UserDetails */,
+				FCEDE9AC23D8C7B6004D218F /* UserCell */,
 				FCA4D40A23D8C56A00E33757 /* UsersViewController.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		FCEDE9AC23D8C7B6004D218F /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDE9AD23D8C7D5004D218F /* UserTableViewCell.swift */,
+				FCEDE9AE23D8C7D5004D218F /* UserTableViewCell.xib */,
+			);
+			path = UserCell;
+			sourceTree = "<group>";
+		};
+		FCEDE9B123D8CD87004D218F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDE9B223D8CD8F004D218F /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCEDE9B223D8CD8F004D218F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDE9B323D8CD93004D218F /* UITextField */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FCEDE9B323D8CD93004D218F /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDE9B423D8CDA5004D218F /* UITextField+Padding.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		FCEDE9B623D8CFE1004D218F /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDE9B723D8CFF7004D218F /* UserDetailsViewController.swift */,
+				FCEDE9B823D8CFF7004D218F /* UserDetailsViewController.xib */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		FCEDE9BB23D8D1FA004D218F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDE9BC23D8D205004D218F /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +280,11 @@
 			files = (
 				FCA4D40423D8BD0F00E33757 /* DansDisney.ttf in Resources */,
 				FCA4D3F723D8B85200E33757 /* LaunchScreen.storyboard in Resources */,
+				FCEDE9BA23D8CFF7004D218F /* UserDetailsViewController.xib in Resources */,
 				FCA4D3F423D8B85200E33757 /* Assets.xcassets in Resources */,
+				FCEDE9BF23D8D39D004D218F /* users.json in Resources */,
 				FCA4D3F223D8B85100E33757 /* Main.storyboard in Resources */,
+				FCEDE9B023D8C7D5004D218F /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +338,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA4D40123D8BC4600E33757 /* AppInfoViewController.swift in Sources */,
+				FCEDE9B523D8CDA5004D218F /* UITextField+Padding.swift in Sources */,
 				FCA4D40B23D8C56A00E33757 /* UsersViewController.swift in Sources */,
 				FCA4D40723D8C36100E33757 /* TabBarViewController.swift in Sources */,
+				FCEDE9BD23D8D205004D218F /* User.swift in Sources */,
+				FCEDE9B923D8CFF7004D218F /* UserDetailsViewController.swift in Sources */,
 				FCA4D3EB23D8B85100E33757 /* AppDelegate.swift in Sources */,
+				FCEDE9AF23D8C7D5004D218F /* UserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

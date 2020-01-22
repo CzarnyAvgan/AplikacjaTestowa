@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6UW-nM-0VW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5un-Fw-qKY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,7 +16,7 @@
         <!--AppInfo-->
         <scene sceneID="LBk-J1-WP2">
             <objects>
-                <viewController id="u7d-qa-38T" customClass="AppInfoViewController" customModule="AplikacjaRekrutacyjna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u7d-qa-38T" customClass="AppInfoViewController" customModule="AplikacjaTestowa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Se8-u1-jBe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hou-nh-eCo">
-                                <rect key="frame" x="47.5" y="68" width="319" height="83.5"/>
+                                <rect key="frame" x="47.5" y="112" width="319" height="83.5"/>
                                 <string key="text">To jest demo aplikacji. 
 Aplikacji która została napisana tylko i wyłącznie w Xcode. 
 Ten Label jest z customowym fontem :).
@@ -38,7 +38,7 @@ Poniższy link przeniesie Cie do szczegółów aplikacji</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Kliknij we mnie " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baJ-9Q-ngb">
-                                <rect key="frame" x="47.5" y="175.5" width="319" height="21"/>
+                                <rect key="frame" x="47.5" y="219.5" width="319" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -74,21 +74,21 @@ Poniższy link przeniesie Cie do szczegółów aplikacji</string>
         <!--Users-->
         <scene sceneID="AuA-be-Gqj">
             <objects>
-                <viewController id="b8z-YZ-ua2" customClass="UsersViewController" customModule="AplikacjaRekrutacyjna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b8z-YZ-ua2" customClass="UsersViewController" customModule="AplikacjaTestowa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vF0-a9-lRG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAE-xI-gmy">
-                                <rect key="frame" x="16" y="52" width="382" height="36"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wyszukaj usera" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAE-xI-gmy">
+                                <rect key="frame" x="16" y="96" width="382" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="HNd-f6-4zg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-XS-obc">
-                                <rect key="frame" x="0.0" y="96" width="414" height="717"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-XS-obc">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -114,10 +114,27 @@ Poniższy link przeniesie Cie do szczegółów aplikacji</string>
             </objects>
             <point key="canvasLocation" x="558" y="-478"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lbz-BF-XZ4">
+            <objects>
+                <navigationController id="5un-Fw-qKY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WsE-9n-JSs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6UW-nM-0VW" kind="relationship" relationship="rootViewController" id="PcD-tX-7V0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCW-Nm-w4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1161" y="-155"/>
+        </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="tLd-Le-XtF">
             <objects>
-                <tabBarController id="6UW-nM-0VW" customClass="TabBarViewController" customModule="AplikacjaRekrutacyjna" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="6UW-nM-0VW" customClass="TabBarViewController" customModule="AplikacjaTestowa" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pIT-NT-JQ2"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FW7-E8-QzN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
