@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A1F3FB32D56ECB924340D71 /* Pods_AplikacjaRekrutacyjna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E9DA7F4DAB6F2BFE5046D2 /* Pods_AplikacjaRekrutacyjna.framework */; };
+		F6B018669321BAF222A639F8 /* Pods_AplikacjaTestowa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB2487F62686F2AA8D15D0A /* Pods_AplikacjaTestowa.framework */; };
 		FCA4D3EB23D8B85100E33757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D3EA23D8B85100E33757 /* AppDelegate.swift */; };
 		FCA4D3F223D8B85100E33757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D3F023D8B85100E33757 /* Main.storyboard */; };
 		FCA4D3F423D8B85200E33757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D3F323D8B85200E33757 /* Assets.xcassets */; };
@@ -15,13 +15,15 @@
 		FCA4D40123D8BC4600E33757 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D40023D8BC4600E33757 /* AppInfoViewController.swift */; };
 		FCA4D40423D8BD0F00E33757 /* DansDisney.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D40323D8BD0F00E33757 /* DansDisney.ttf */; };
 		FCA4D40723D8C36100E33757 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D40623D8C36100E33757 /* TabBarViewController.swift */; };
+		FCA4D40B23D8C56A00E33757 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D40A23D8C56A00E33757 /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BA2F18331590E068CAAD96B /* Pods-AplikacjaRekrutacyjna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikacjaRekrutacyjna.debug.xcconfig"; path = "Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna.debug.xcconfig"; sourceTree = "<group>"; };
+		2923381F3A68FA5909895385 /* Pods-AplikacjaTestowa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikacjaTestowa.release.xcconfig"; path = "Target Support Files/Pods-AplikacjaTestowa/Pods-AplikacjaTestowa.release.xcconfig"; sourceTree = "<group>"; };
 		94C9F6C65B49055E0313EB43 /* Pods-AplikacjaRekrutacyjna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikacjaRekrutacyjna.release.xcconfig"; path = "Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna.release.xcconfig"; sourceTree = "<group>"; };
-		B9E9DA7F4DAB6F2BFE5046D2 /* Pods_AplikacjaRekrutacyjna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplikacjaRekrutacyjna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCA4D3E723D8B85100E33757 /* AplikacjaRekrutacyjna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplikacjaRekrutacyjna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79FDC3E7CB7AF669A51DA2C /* Pods-AplikacjaTestowa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikacjaTestowa.debug.xcconfig"; path = "Target Support Files/Pods-AplikacjaTestowa/Pods-AplikacjaTestowa.debug.xcconfig"; sourceTree = "<group>"; };
+		FCA4D3E723D8B85100E33757 /* AplikacjaTestowa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplikacjaTestowa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4D3EA23D8B85100E33757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA4D3F123D8B85100E33757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCA4D3F323D8B85200E33757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		FCA4D40023D8BC4600E33757 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		FCA4D40323D8BD0F00E33757 /* DansDisney.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DansDisney.ttf; sourceTree = "<group>"; };
 		FCA4D40623D8C36100E33757 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FCA4D40A23D8C56A00E33757 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		FDB2487F62686F2AA8D15D0A /* Pods_AplikacjaTestowa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplikacjaTestowa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A1F3FB32D56ECB924340D71 /* Pods_AplikacjaRekrutacyjna.framework in Frameworks */,
+				F6B018669321BAF222A639F8 /* Pods_AplikacjaTestowa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +53,8 @@
 			children = (
 				0BA2F18331590E068CAAD96B /* Pods-AplikacjaRekrutacyjna.debug.xcconfig */,
 				94C9F6C65B49055E0313EB43 /* Pods-AplikacjaRekrutacyjna.release.xcconfig */,
+				B79FDC3E7CB7AF669A51DA2C /* Pods-AplikacjaTestowa.debug.xcconfig */,
+				2923381F3A68FA5909895385 /* Pods-AplikacjaTestowa.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -56,7 +62,7 @@
 		A45C1F5FDCD71BAEF5EED429 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9E9DA7F4DAB6F2BFE5046D2 /* Pods_AplikacjaRekrutacyjna.framework */,
+				FDB2487F62686F2AA8D15D0A /* Pods_AplikacjaTestowa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -64,7 +70,7 @@
 		FCA4D3DE23D8B85100E33757 = {
 			isa = PBXGroup;
 			children = (
-				FCA4D3E923D8B85100E33757 /* AplikacjaRekrutacyjna */,
+				FCA4D3E923D8B85100E33757 /* AplikacjaTestowa */,
 				FCA4D3E823D8B85100E33757 /* Products */,
 				94972F73268405547740833A /* Pods */,
 				A45C1F5FDCD71BAEF5EED429 /* Frameworks */,
@@ -74,12 +80,12 @@
 		FCA4D3E823D8B85100E33757 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCA4D3E723D8B85100E33757 /* AplikacjaRekrutacyjna.app */,
+				FCA4D3E723D8B85100E33757 /* AplikacjaTestowa.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCA4D3E923D8B85100E33757 /* AplikacjaRekrutacyjna */ = {
+		FCA4D3E923D8B85100E33757 /* AplikacjaTestowa */ = {
 			isa = PBXGroup;
 			children = (
 				FCA4D3EA23D8B85100E33757 /* AppDelegate.swift */,
@@ -90,13 +96,14 @@
 				FCA4D3F323D8B85200E33757 /* Assets.xcassets */,
 				FCA4D3F823D8B85200E33757 /* Info.plist */,
 			);
-			path = AplikacjaRekrutacyjna;
+			path = AplikacjaTestowa;
 			sourceTree = "<group>";
 		};
 		FCA4D3FE23D8BB3500E33757 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				FCA4D40023D8BC4600E33757 /* AppInfoViewController.swift */,
+				FCA4D40923D8C55600E33757 /* Users */,
+				FCA4D40823D8C54E00E33757 /* AppInfo */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -126,12 +133,28 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
+		FCA4D40823D8C54E00E33757 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4D40023D8BC4600E33757 /* AppInfoViewController.swift */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		FCA4D40923D8C55600E33757 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4D40A23D8C56A00E33757 /* UsersViewController.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCA4D3E623D8B85100E33757 /* AplikacjaRekrutacyjna */ = {
+		FCA4D3E623D8B85100E33757 /* AplikacjaTestowa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCA4D3FB23D8B85200E33757 /* Build configuration list for PBXNativeTarget "AplikacjaRekrutacyjna" */;
+			buildConfigurationList = FCA4D3FB23D8B85200E33757 /* Build configuration list for PBXNativeTarget "AplikacjaTestowa" */;
 			buildPhases = (
 				5C0F8AACD69524B71D2D8371 /* [CP] Check Pods Manifest.lock */,
 				FCA4D3E323D8B85100E33757 /* Sources */,
@@ -143,9 +166,9 @@
 			);
 			dependencies = (
 			);
-			name = AplikacjaRekrutacyjna;
+			name = AplikacjaTestowa;
 			productName = AplikacjaRekrutacyjna;
-			productReference = FCA4D3E723D8B85100E33757 /* AplikacjaRekrutacyjna.app */;
+			productReference = FCA4D3E723D8B85100E33757 /* AplikacjaTestowa.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FCA4D3E223D8B85100E33757 /* Build configuration list for PBXProject "AplikacjaRekrutacyjna" */;
+			buildConfigurationList = FCA4D3E223D8B85100E33757 /* Build configuration list for PBXProject "AplikacjaTestowa" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCA4D3E623D8B85100E33757 /* AplikacjaRekrutacyjna */,
+				FCA4D3E623D8B85100E33757 /* AplikacjaTestowa */,
 			);
 		};
 /* End PBXProject section */
@@ -211,7 +234,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AplikacjaRekrutacyjna-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AplikacjaTestowa-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -224,15 +247,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AplikacjaTestowa/Pods-AplikacjaTestowa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AplikacjaTestowa/Pods-AplikacjaTestowa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AplikacjaTestowa/Pods-AplikacjaTestowa-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -243,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA4D40123D8BC4600E33757 /* AppInfoViewController.swift in Sources */,
+				FCA4D40B23D8C56A00E33757 /* UsersViewController.swift in Sources */,
 				FCA4D40723D8C36100E33757 /* TabBarViewController.swift in Sources */,
 				FCA4D3EB23D8B85100E33757 /* AppDelegate.swift in Sources */,
 			);
@@ -386,19 +410,19 @@
 		};
 		FCA4D3FC23D8B85200E33757 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BA2F18331590E068CAAD96B /* Pods-AplikacjaRekrutacyjna.debug.xcconfig */;
+			baseConfigurationReference = B79FDC3E7CB7AF669A51DA2C /* Pods-AplikacjaTestowa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T43Q58LJ63;
-				INFOPLIST_FILE = AplikacjaRekrutacyjna/Info.plist;
+				INFOPLIST_FILE = AplikacjaTestowa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = noSkillJustFun.AplikacjaRekrutacyjna;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = noSkillJustFun.AplikacjaTestowa;
+				PRODUCT_NAME = AplikacjaTestowa;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -406,19 +430,19 @@
 		};
 		FCA4D3FD23D8B85200E33757 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94C9F6C65B49055E0313EB43 /* Pods-AplikacjaRekrutacyjna.release.xcconfig */;
+			baseConfigurationReference = 2923381F3A68FA5909895385 /* Pods-AplikacjaTestowa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T43Q58LJ63;
-				INFOPLIST_FILE = AplikacjaRekrutacyjna/Info.plist;
+				INFOPLIST_FILE = AplikacjaTestowa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = noSkillJustFun.AplikacjaRekrutacyjna;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = noSkillJustFun.AplikacjaTestowa;
+				PRODUCT_NAME = AplikacjaTestowa;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -427,7 +451,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCA4D3E223D8B85100E33757 /* Build configuration list for PBXProject "AplikacjaRekrutacyjna" */ = {
+		FCA4D3E223D8B85100E33757 /* Build configuration list for PBXProject "AplikacjaTestowa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCA4D3F923D8B85200E33757 /* Debug */,
@@ -436,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCA4D3FB23D8B85200E33757 /* Build configuration list for PBXNativeTarget "AplikacjaRekrutacyjna" */ = {
+		FCA4D3FB23D8B85200E33757 /* Build configuration list for PBXNativeTarget "AplikacjaTestowa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCA4D3FC23D8B85200E33757 /* Debug */,

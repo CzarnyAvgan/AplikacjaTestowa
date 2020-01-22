@@ -1,6 +1,0 @@
-framework module Pods_AplikacjaRekrutacyjna {
-  umbrella header "Pods-AplikacjaRekrutacyjna-umbrella.h"
-
-  export *
-  module * { export * }
-}

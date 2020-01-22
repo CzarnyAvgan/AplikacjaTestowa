@@ -23,5 +23,4 @@ class TabBarViewController: UITabBarController {
             item.image = optionsImages[index]
         }
     }
-    
 }

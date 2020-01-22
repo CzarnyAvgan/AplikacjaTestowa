@@ -74,14 +74,41 @@ Poniższy link przeniesie Cie do szczegółów aplikacji</string>
         <!--Users-->
         <scene sceneID="AuA-be-Gqj">
             <objects>
-                <viewController id="b8z-YZ-ua2" sceneMemberID="viewController">
+                <viewController id="b8z-YZ-ua2" customClass="UsersViewController" customModule="AplikacjaRekrutacyjna" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vF0-a9-lRG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAE-xI-gmy">
+                                <rect key="frame" x="16" y="52" width="382" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="HNd-f6-4zg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-XS-obc">
+                                <rect key="frame" x="0.0" y="96" width="414" height="717"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a2c-XS-obc" firstAttribute="top" secondItem="FAE-xI-gmy" secondAttribute="bottom" constant="8" id="2kb-Xy-cnN"/>
+                            <constraint firstItem="FAE-xI-gmy" firstAttribute="leading" secondItem="cy6-7J-MGl" secondAttribute="leading" constant="16" id="6rj-Ve-SPp"/>
+                            <constraint firstItem="a2c-XS-obc" firstAttribute="leading" secondItem="cy6-7J-MGl" secondAttribute="leading" id="9wo-Mx-5pd"/>
+                            <constraint firstItem="cy6-7J-MGl" firstAttribute="trailing" secondItem="FAE-xI-gmy" secondAttribute="trailing" constant="16" id="GTG-m4-smy"/>
+                            <constraint firstItem="cy6-7J-MGl" firstAttribute="trailing" secondItem="a2c-XS-obc" secondAttribute="trailing" id="a55-zJ-9it"/>
+                            <constraint firstItem="FAE-xI-gmy" firstAttribute="top" secondItem="cy6-7J-MGl" secondAttribute="top" constant="8" id="ftc-iq-wFE"/>
+                            <constraint firstItem="cy6-7J-MGl" firstAttribute="bottom" secondItem="a2c-XS-obc" secondAttribute="bottom" id="lsw-2x-dOD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cy6-7J-MGl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Users" id="D0a-Su-Obg"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="FAE-xI-gmy" id="OiJ-Vg-NVS"/>
+                        <outlet property="tableView" destination="a2c-XS-obc" id="uzV-fx-Bu5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irF-dm-hZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

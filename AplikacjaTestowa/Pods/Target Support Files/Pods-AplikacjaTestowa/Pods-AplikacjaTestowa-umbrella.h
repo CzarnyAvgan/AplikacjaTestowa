@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AplikacjaRekrutacyjnaVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AplikacjaRekrutacyjnaVersionString[];
+FOUNDATION_EXPORT double Pods_AplikacjaTestowaVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_AplikacjaTestowaVersionString[];
 
