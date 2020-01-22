@@ -12,10 +12,13 @@ class UsersViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewBottonConstraint: NSLayoutConstraint!
     
     let cellIdentifier = "UserTableViewCell"
     
-    var dataSource: [[String: [User]]] = [] {
+    var dataSource: [[String: [User]]] = []
+    
+    var filteredDataSource: [[String: [User]]] = [] {
         didSet {
             tableView.reloadData()
         }
@@ -23,16 +26,39 @@ class UsersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Users"
         setupTableView()
         setupSearchTextField()
-        
         fetchUsers()
+        print("tableViewBottonConstraint: ",tableViewBottonConstraint.constant)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification){
+        if let userInfo = notification.userInfo {
+            let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+            if let tabBarHeight = (self.navigationController?.viewControllers.first as? TabBarViewController)?.tabBar.frame.height {
+                 tableView.contentInset.bottom = keyboardFrame.size.height - tabBarHeight
+                tableView.scrollIndicatorInsets.bottom = keyboardFrame.size.height - tabBarHeight
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification){
+        if let userInfo = notification.userInfo {
+            let _ = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+            tableView.contentInset.bottom = 0
+        }
+    }
+    
     
     private func setupSearchTextField() {
         searchTextField.layer.borderWidth = 1
-        searchTextField.layer.borderColor = UIColor.black.cgColor
+        searchTextField.layer.borderColor = UIColor.systemGray.cgColor
         searchTextField.layer.cornerRadius = 5.0
         searchTextField.setLeftPaddingPoints(CGFloat(16))
         searchTextField.delegate = self
@@ -72,29 +98,45 @@ class UsersViewController: UIViewController {
         for item in sortedFirstLetters {
             dataSource.append([item: users.sorted{ $0.name < $1.name }.filter({$0.name.hasPrefix(item)})])
         }
+        
+        filteredDataSource = dataSource
     }
     
     @IBAction func textFieldEditingChanges(_ sender: UITextField) {
+        guard let text = sender.text, !text.isEmpty else {
+            filteredDataSource = dataSource
+            return
+        }
         
+        filteredDataSource = []
+        for dictionary in dataSource {
+            for dictionaryElement in dictionary {
+                let users = dictionaryElement.value.filter { (user) -> Bool in
+                    return user.name.lowercased().contains(text.lowercased()) || user.surname.lowercased().contains(text.lowercased())
+                }
+                if !users.isEmpty {
+                    filteredDataSource.append([dictionaryElement.key: users])
+                }
+            }
+        }
     }
-    
 }
 
 extension UsersViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return dataSource.count
+        return filteredDataSource.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource[section].first?.value.count ?? 0
+        return filteredDataSource[section].first?.value.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? UserTableViewCell else {
             fatalError()
         }
-        if let data = dataSource[indexPath.section].first?.value {
+        if let data = filteredDataSource[indexPath.section].first?.value {
             cell.setupCell(data[indexPath.row])
         }
         
@@ -102,17 +144,15 @@ extension UsersViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let usersFirstLetter = dataSource[section].first?.key else { return "" }
+        guard let usersFirstLetter = filteredDataSource[section].first?.key else { return "" }
         return "Użytkownicy których na \(usersFirstLetter)"
     }
-    
-    
-    
 }
 
 extension UsersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let user = dataSource[indexPath.section].first?.value[indexPath.row] {
+        searchTextField.resignFirstResponder()
+        if let user = filteredDataSource[indexPath.section].first?.value[indexPath.row] {
             let vc = UserDetailsViewController()
             vc.user = user
             self.navigationController?.pushViewController(vc, animated: true)
