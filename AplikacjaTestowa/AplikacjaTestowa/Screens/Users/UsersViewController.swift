@@ -12,7 +12,6 @@ class UsersViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var tableViewBottonConstraint: NSLayoutConstraint!
     
     let cellIdentifier = "UserTableViewCell"
     
@@ -24,12 +23,14 @@ class UsersViewController: UIViewController {
         }
     }
     
+    var lastVisibleCellIndexPath: IndexPath?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setupSearchTextField()
         fetchUsers()
-        print("tableViewBottonConstraint: ",tableViewBottonConstraint.constant)
+     
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -42,8 +43,13 @@ class UsersViewController: UIViewController {
         if let userInfo = notification.userInfo {
             let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
             if let tabBarHeight = (self.navigationController?.viewControllers.first as? TabBarViewController)?.tabBar.frame.height {
-                 tableView.contentInset.bottom = keyboardFrame.size.height - tabBarHeight
+                tableView.contentInset.bottom = keyboardFrame.size.height - tabBarHeight
                 tableView.scrollIndicatorInsets.bottom = keyboardFrame.size.height - tabBarHeight
+                if let cell = tableView.visibleCells.last,
+                    let lastVisibleCellIndexPath = tableView.indexPath(for: cell) {
+                    self.lastVisibleCellIndexPath = lastVisibleCellIndexPath
+                    self.tableView.scrollToRow(at:lastVisibleCellIndexPath, at: .bottom, animated: true)
+                }
             }
         }
     }
@@ -52,6 +58,9 @@ class UsersViewController: UIViewController {
         if let userInfo = notification.userInfo {
             let _ = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
             tableView.contentInset.bottom = 0
+            if let lastVisibleCellIndexPath = lastVisibleCellIndexPath {
+                tableView.scrollToRow(at: lastVisibleCellIndexPath, at: .bottom, animated: true)
+            }
         }
     }
     
@@ -60,7 +69,7 @@ class UsersViewController: UIViewController {
         searchTextField.layer.borderWidth = 1
         searchTextField.layer.borderColor = UIColor.systemGray.cgColor
         searchTextField.layer.cornerRadius = 5.0
-        searchTextField.setLeftPaddingPoints(CGFloat(16))
+        searchTextField.setLeftPadding(CGFloat(16))
         searchTextField.delegate = self
     }
     

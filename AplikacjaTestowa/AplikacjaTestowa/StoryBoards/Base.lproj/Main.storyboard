@@ -110,8 +110,7 @@ Poniższy link przeniesie Cie do szczegółów aplikacji</string>
                     <tabBarItem key="tabBarItem" title="Users" id="D0a-Su-Obg"/>
                     <connections>
                         <outlet property="searchTextField" destination="FAE-xI-gmy" id="OiJ-Vg-NVS"/>
-                        <outlet property="tableView" destination="a2c-XS-obc" id="uzV-fx-Bu5"/>
-                        <outlet property="tableViewBottonConstraint" destination="lsw-2x-dOD" id="lGv-gq-dgg"/>
+                        <outlet property="tableView" destination="a2c-XS-obc" id="pco-9U-Ex2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irF-dm-hZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
