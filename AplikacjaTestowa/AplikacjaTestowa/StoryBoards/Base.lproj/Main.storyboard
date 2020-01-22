@@ -86,6 +86,9 @@ Poniższy link przeniesie Cie do szczegółów aplikacji</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanges:" destination="b8z-YZ-ua2" eventType="editingChanged" id="EbD-TI-Rok"/>
+                                </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-XS-obc">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
