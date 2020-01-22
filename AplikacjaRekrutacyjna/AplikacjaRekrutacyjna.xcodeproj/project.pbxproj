@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1F3FB32D56ECB924340D71 /* Pods_AplikacjaRekrutacyjna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E9DA7F4DAB6F2BFE5046D2 /* Pods_AplikacjaRekrutacyjna.framework */; };
 		FCA4D3EB23D8B85100E33757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D3EA23D8B85100E33757 /* AppDelegate.swift */; };
-		FCA4D3ED23D8B85100E33757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D3EC23D8B85100E33757 /* SceneDelegate.swift */; };
-		FCA4D3EF23D8B85100E33757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D3EE23D8B85100E33757 /* ViewController.swift */; };
 		FCA4D3F223D8B85100E33757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D3F023D8B85100E33757 /* Main.storyboard */; };
 		FCA4D3F423D8B85200E33757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D3F323D8B85200E33757 /* Assets.xcassets */; };
 		FCA4D3F723D8B85200E33757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D3F523D8B85200E33757 /* LaunchScreen.storyboard */; };
+		FCA4D40123D8BC4600E33757 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D40023D8BC4600E33757 /* AppInfoViewController.swift */; };
+		FCA4D40423D8BD0F00E33757 /* DansDisney.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCA4D40323D8BD0F00E33757 /* DansDisney.ttf */; };
+		FCA4D40723D8C36100E33757 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4D40623D8C36100E33757 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BA2F18331590E068CAAD96B /* Pods-AplikacjaRekrutacyjna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikacjaRekrutacyjna.debug.xcconfig"; path = "Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna.debug.xcconfig"; sourceTree = "<group>"; };
+		94C9F6C65B49055E0313EB43 /* Pods-AplikacjaRekrutacyjna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplikacjaRekrutacyjna.release.xcconfig"; path = "Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna.release.xcconfig"; sourceTree = "<group>"; };
+		B9E9DA7F4DAB6F2BFE5046D2 /* Pods_AplikacjaRekrutacyjna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplikacjaRekrutacyjna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4D3E723D8B85100E33757 /* AplikacjaRekrutacyjna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplikacjaRekrutacyjna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4D3EA23D8B85100E33757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCA4D3EC23D8B85100E33757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCA4D3EE23D8B85100E33757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCA4D3F123D8B85100E33757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCA4D3F323D8B85200E33757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA4D3F623D8B85200E33757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA4D3F823D8B85200E33757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA4D40023D8BC4600E33757 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
+		FCA4D40323D8BD0F00E33757 /* DansDisney.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DansDisney.ttf; sourceTree = "<group>"; };
+		FCA4D40623D8C36100E33757 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1F3FB32D56ECB924340D71 /* Pods_AplikacjaRekrutacyjna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94972F73268405547740833A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BA2F18331590E068CAAD96B /* Pods-AplikacjaRekrutacyjna.debug.xcconfig */,
+				94C9F6C65B49055E0313EB43 /* Pods-AplikacjaRekrutacyjna.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A45C1F5FDCD71BAEF5EED429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9DA7F4DAB6F2BFE5046D2 /* Pods_AplikacjaRekrutacyjna.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCA4D3DE23D8B85100E33757 = {
 			isa = PBXGroup;
 			children = (
 				FCA4D3E923D8B85100E33757 /* AplikacjaRekrutacyjna */,
 				FCA4D3E823D8B85100E33757 /* Products */,
+				94972F73268405547740833A /* Pods */,
+				A45C1F5FDCD71BAEF5EED429 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +83,47 @@
 			isa = PBXGroup;
 			children = (
 				FCA4D3EA23D8B85100E33757 /* AppDelegate.swift */,
-				FCA4D3EC23D8B85100E33757 /* SceneDelegate.swift */,
-				FCA4D3EE23D8B85100E33757 /* ViewController.swift */,
-				FCA4D3F023D8B85100E33757 /* Main.storyboard */,
+				FCA4D40523D8C31500E33757 /* TabBarController */,
+				FCA4D3FF23D8BB3C00E33757 /* StoryBoard */,
+				FCA4D3FE23D8BB3500E33757 /* Screen */,
+				FCA4D40223D8BCFE00E33757 /* Fonts */,
 				FCA4D3F323D8B85200E33757 /* Assets.xcassets */,
-				FCA4D3F523D8B85200E33757 /* LaunchScreen.storyboard */,
 				FCA4D3F823D8B85200E33757 /* Info.plist */,
 			);
 			path = AplikacjaRekrutacyjna;
+			sourceTree = "<group>";
+		};
+		FCA4D3FE23D8BB3500E33757 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4D40023D8BC4600E33757 /* AppInfoViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		FCA4D3FF23D8BB3C00E33757 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4D3F023D8B85100E33757 /* Main.storyboard */,
+				FCA4D3F523D8B85200E33757 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		FCA4D40223D8BCFE00E33757 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4D40323D8BD0F00E33757 /* DansDisney.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FCA4D40523D8C31500E33757 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4D40623D8C36100E33757 /* TabBarViewController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCA4D3FB23D8B85200E33757 /* Build configuration list for PBXNativeTarget "AplikacjaRekrutacyjna" */;
 			buildPhases = (
+				5C0F8AACD69524B71D2D8371 /* [CP] Check Pods Manifest.lock */,
 				FCA4D3E323D8B85100E33757 /* Sources */,
 				FCA4D3E423D8B85100E33757 /* Frameworks */,
 				FCA4D3E523D8B85100E33757 /* Resources */,
+				E655425BB928EECEA6E1DFA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA4D40423D8BD0F00E33757 /* DansDisney.ttf in Resources */,
 				FCA4D3F723D8B85200E33757 /* LaunchScreen.storyboard in Resources */,
 				FCA4D3F423D8B85200E33757 /* Assets.xcassets in Resources */,
 				FCA4D3F223D8B85100E33757 /* Main.storyboard in Resources */,
@@ -133,14 +195,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C0F8AACD69524B71D2D8371 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AplikacjaRekrutacyjna-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E655425BB928EECEA6E1DFA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AplikacjaRekrutacyjna/Pods-AplikacjaRekrutacyjna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCA4D3E323D8B85100E33757 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA4D3EF23D8B85100E33757 /* ViewController.swift in Sources */,
+				FCA4D40123D8BC4600E33757 /* AppInfoViewController.swift in Sources */,
+				FCA4D40723D8C36100E33757 /* TabBarViewController.swift in Sources */,
 				FCA4D3EB23D8B85100E33757 /* AppDelegate.swift in Sources */,
-				FCA4D3ED23D8B85100E33757 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +386,13 @@
 		};
 		FCA4D3FC23D8B85200E33757 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA2F18331590E068CAAD96B /* Pods-AplikacjaRekrutacyjna.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T43Q58LJ63;
 				INFOPLIST_FILE = AplikacjaRekrutacyjna/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +400,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = noSkillJustFun.AplikacjaRekrutacyjna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FCA4D3FD23D8B85200E33757 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C9F6C65B49055E0313EB43 /* Pods-AplikacjaRekrutacyjna.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T43Q58LJ63;
 				INFOPLIST_FILE = AplikacjaRekrutacyjna/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = noSkillJustFun.AplikacjaRekrutacyjna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
